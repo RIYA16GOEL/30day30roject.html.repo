@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Logo Example</title>
+    <style>
+        /* Styling the body for demonstration */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            height: 2000px; /* Just to make scrolling visible */
+        }
+
+        /* Logo container */
+        .logo {
+            position: fixed; /* Keeps the logo fixed */
+            top: 20px; /* Distance from the top */
+            left: 20px; /* Distance from the left */
+            width: 120px; /* Set logo size */
+            height: auto;
+            z-index: 1000; /* Ensures logo stays above other elements */
+        }
+
+        /* Optional: Add hover effect */
+        .logo img {
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .logo img:hover {
+            transform: scale(1.1); /* Zoom-in effect on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fixed Logo -->
+    <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Logo">
+    </div>
+
+    <h1 style="margin-top:150px; text-align:center;">Scroll down to see the logo fixed!</h1>
+    <p style="text-align:center;">This is a sample page to demonstrate a fixed logo in HTML and CSS.</p>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload • Find Your Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <img class="logo" alt="Find Your Home Logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/House_icon_alliance.svg/512px-House_icon_alliance.svg.png">
+      <div class="brand">Find Your Home</div>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a class="active" href="upload.html">Upload</a>
+      <a href="register.html">Register</a>
+      <a href="summary.html">Summary</a>
+      <a href="review.html">Review</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Upload Property Photos</h2>
+    <p class="section-sub">Add high-quality photos to attract buyers.</p>
+
+    <form class="form">
+      <div class="field"><label>Property Title</label><input class="input" type="text" placeholder="e.g., Sea View Apartment" required></div>
+      <div class="field"><label>Upload Images</label><input class="input" type="file" accept="image/*" multiple required></div>
+      <div class="field"><label>Short Description</label><textarea class="textarea" placeholder="Describe key features…"></textarea></div>
+      <button class="btn">Upload</button>
+    </form>
+  </main>
+
+  <footer class="footer">© 2025 Find Your Home</footer>
+</body>
+</html>

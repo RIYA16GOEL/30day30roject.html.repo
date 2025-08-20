@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Property • Find Your Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <img class="logo" alt="Find Your Home Logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/House_icon_alliance.svg/512px-House_icon_alliance.svg.png">
+      <div class="brand">Find Your Home</div>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="upload.html">Upload</a>
+      <a class="active" href="register.html">Register</a>
+      <a href="summary.html">Summary</a>
+      <a href="review.html">Review</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Register Your Property</h2>
+    <p class="section-sub">Owners can list their property with images, price and a map.</p>
+
+    <form class="form">
+      <div class="field"><label>Owner Name</label><input class="input" type="text" placeholder="Your full name" required></div>
+      <div class="field"><label>Property Name</label><input class="input" type="text" placeholder="e.g., Skyline Residency 2BHK" required></div>
+      <div class="field"><label>City / Area</label><input class="input" type="text" placeholder="e.g., Andheri West, Mumbai" required></div>
+      <div class="field"><label>Price (₹)</label><input class="input" type="number" min="0" step="1000" placeholder="e.g., 8500000" required></div>
+      <div class="field"><label>Property Photos</label><input class="input" type="file" accept="image/*" multiple required></div>
+      <div class="field">
+        <label>Google Map Embed URL</label>
+        <input class="input" type="url" placeholder="Paste an embed link, e.g., https://www.google.com/maps?q=Andheri%20West&output=embed" required>
+        <small class="section-sub">Tip: Open Google Maps → search your location → Share → Embed a map → Copy HTML → paste the src URL here.</small>
+      </div>
+      <div class="field"><label>Description</label><textarea class="textarea" placeholder="Highlight amenities, area, connectivity, etc."></textarea></div>
+      <button class="btn">Register Property</button>
+    </form>
+  </main>
+
+  <footer class="footer">© 2025 Find Your Home</footer>
+</body>
+</html>
