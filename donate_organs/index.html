@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift of Life - Organ Donation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1920x1080/a2d2ff/ffffff?text=A+Hopeful+Future');
+            background-size: cover;
+            background-position: center;
+        }
+        .stat-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .page-hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    
+    <header class="bg-white shadow-md fixed w-full z-10">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-teal-600 nav-link">Gift of Life</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#home" class="text-gray-600 hover:text-teal-600 transition duration-300 nav-link">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-teal-600 transition duration-300 nav-link">About</a>
+                <a href="#why-donate" class="text-gray-600 hover:text-teal-600 transition duration-300 nav-link">Why Donate</a>
+                <a href="#how-it-works" class="text-gray-600 hover:text-teal-600 transition duration-300 nav-link">How It Works</a>
+                <a href="#contact" class="text-gray-600 hover:text-teal-600 transition duration-300 nav-link">Contact</a>
+                <a href="#donate" class="bg-teal-500 text-white px-6 py-2 rounded-full hover:bg-teal-600 transition duration-300 shadow-lg nav-link">Become a Donor</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4">
+            <a href="#home" class="block py-2 text-gray-600 hover:text-teal-600 nav-link">Home</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:text-teal-600 nav-link">About</a>
+            <a href="#why-donate" class="block py-2 text-gray-600 hover:text-teal-600 nav-link">Why Donate</a>
+            <a href="#how-it-works" class="block py-2 text-gray-600 hover:text-teal-600 nav-link">How It Works</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-teal-600 nav-link">Contact</a>
+            <a href="#donate" class="block mt-2 bg-teal-500 text-white text-center px-6 py-2 rounded-full hover:bg-teal-600 nav-link">Become a Donor</a>
+        </div>
+    </header>
+
+    <main id="main-content">
+        
+        <section id="home" class="page hero-bg h-screen flex items-center justify-center text-white text-center pt-16">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">One Decision Can Save Eight Lives</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Become an organ donor and give the most precious gift of all: the gift of life. Your legacy can live on in the lives you save.</p>
+                <a href="#donate" class="bg-white text-teal-600 font-bold px-10 py-4 rounded-full text-lg hover:bg-gray-200 transition duration-300 transform hover:scale-105 nav-link">Register Now</a>
+            </div>
+        </section>
+
+        
+        <section id="about" class="page py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Our Mission: A Lifeline of Hope</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">We are dedicated to saving lives through organ and tissue donation. We connect generous donors with patients in critical need, fostering a community of hope, compassion, and life.</p>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="https://placehold.co/600x400/e0f2f1/333333?text=Team+of+Hope" alt="Our Team" class="rounded-lg shadow-2xl w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-semibold mb-4 text-teal-700">Who We Are</h3>
+                        <p class="text-gray-600 mb-4">Gift of Life is a non-profit organization committed to managing the organ donor registry and raising awareness about the critical need for donation. We work with hospitals, medical professionals, and communities to facilitate the donation process and support donor families.</p>
+                        <p class="text-gray-600">Our team is comprised of passionate individuals, medical experts, and volunteers who believe in the power of donation to transform lives. We provide support and resources for everyone involved in the donation journey.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="why-donate" class="page py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">The Impact of Your Gift</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">The need for organ donors is critical. Discover the profound difference you can make.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="stat-card bg-white p-8 rounded-lg shadow-lg text-center">
+                        <div class="text-5xl font-extrabold text-teal-500 mb-4">100,000+</div>
+                        <h3 class="text-xl font-semibold text-gray-700">Patients Waiting</h3>
+                        <p class="text-gray-500 mt-2">More than 100,000 people are on the national transplant waiting list, hoping for a second chance at life.</p>
+                    </div>
+                    
+                    <div class="stat-card bg-white p-8 rounded-lg shadow-lg text-center">
+                        <div class="text-5xl font-extrabold text-teal-500 mb-4">17</div>
+                        <h3 class="text-xl font-semibold text-gray-700">Lives Lost Daily</h3>
+                        <p class="text-gray-500 mt-2">Every day, 17 people die waiting for an organ transplant. Your decision to donate can change this statistic.</p>
+                    </div>
+                    
+                    <div class="stat-card bg-white p-8 rounded-lg shadow-lg text-center">
+                        <div class="text-5xl font-extrabold text-teal-500 mb-4">10 Mins</div>
+                        <h3 class="text-xl font-semibold text-gray-700">To Register</h3>
+                        <p class="text-gray-500 mt-2">It only takes a few minutes to register as an organ donor, but your impact can last for generations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="how-it-works" class="page py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">The Donation Process</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">We've made the process of becoming a donor simple, secure, and respectful.</p>
+                </div>
+                <div class="relative">
+                    <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-teal-200" style="transform: translateY(-50%);"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-16 text-center">
+                        <div class="relative">
+                            <div class="bg-teal-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 z-10 relative">1</div>
+                            <h3 class="text-xl font-semibold mb-2">Register Your Decision</h3>
+                            <p class="text-gray-600">Sign up online through your state's registry. It's a quick and secure process to make your wishes known.</p>
+                        </div>
+                        <div class="relative">
+                            <div class="bg-teal-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 z-10 relative">2</div>
+                            <h3 class="text-xl font-semibold mb-2">Share With Family</h3>
+                            <p class="text-gray-600">Inform your family of your decision. This helps ensure your wishes are honored at the critical time.</p>
+                        </div>
+                        <div class="relative">
+                            <div class="bg-teal-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 z-10 relative">3</div>
+                            <h3 class="text-xl font-semibold mb-2">A Legacy of Life</h3>
+                            <p class="text-gray-600">In the event of your passing, your selfless gift can save and heal lives, creating a lasting legacy of compassion.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="testimonials" class="page py-20 bg-teal-50">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Stories of Hope</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Read the powerful stories of recipients and donor families.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <p class="text-gray-600 italic mb-4">"I received a new heart three years ago. There isn't a day that goes by where I don't think about my donor and their incredible gift. They gave me a future with my children, and for that, I am eternally grateful."</p>
+                        <div class="flex items-center">
+                            <img src="https://placehold.co/50x50/ffc09f/ffffff?text=J.D." alt="John Doe" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <p class="font-semibold text-gray-800">John D.</p>
+                                <p class="text-sm text-gray-500">Heart Recipient</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <p class="text-gray-600 italic mb-4">"When we lost our son, the decision to donate his organs was the one light in our darkest moment. Knowing he saved three lives has brought our family immense comfort and peace. His spirit lives on."</p>
+                        <div class="flex items-center">
+                            <img src="https://placehold.co/50x50/c2f0c2/ffffff?text=S.P." alt="Sarah P." class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <p class="font-semibold text-gray-800">The Parker Family</p>
+                                <p class="text-sm text-gray-500">Donor Family</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="contact" class="page py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Get In Touch</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Have questions? We're here to help. Reach out to us for more information.</p>
+                </div>
+                <div class="max-w-2xl mx-auto bg-gray-50 p-8 rounded-lg shadow-lg">
+                    <form>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" placeholder="Your Name" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500">
+                            <input type="email" placeholder="Your Email" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500">
+                        </div>
+                        <div class="mb-6">
+                            <input type="text" placeholder="Subject" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500">
+                        </div>
+                        <div class="mb-6">
+                            <textarea placeholder="Your Message" rows="5" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-teal-500 text-white font-bold px-10 py-3 rounded-full hover:bg-teal-600 transition duration-300 shadow-lg">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <section id="donate" class="page page-hidden py-20 bg-white pt-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Become an Organ Donor</h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Join the registry and make the heroic decision to save lives. Please fill out the form below with your information.</p>
+            </div>
+            <div class="max-w-4xl mx-auto bg-gray-50 p-8 rounded-lg shadow-lg">
+                <form id="donate-form">
+                    <h3 class="text-2xl font-semibold mb-6 text-teal-700 border-b pb-4">Personal Information</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <input type="text" id="fullName" placeholder="Full Name" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500" required>
+                        <input type="email" id="email" placeholder="Email Address" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500" required>
+                        <input type="tel" id="phone" placeholder="Phone Number" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500" required>
+                        <input type="date" id="dob" placeholder="Date of Birth" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500" required>
+                    </div>
+                    
+                    <h3 class="text-2xl font-semibold mb-6 mt-8 text-teal-700 border-b pb-4">Donation Preferences</h3>
+                    <p class="text-gray-600 mb-4">Please select the organs and tissues you wish to donate. You can choose to donate all, or specify your preferences.</p>
+                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                        <label class="flex items-center space-x-2"><input type="checkbox" name="organs" value="Heart" class="form-checkbox h-5 w-5 text-teal-600"><span>Heart</span></label>
+                        <label class="flex items-center space-x-2"><input type="checkbox" name="organs" value="Lungs" class="form-checkbox h-5 w-5 text-teal-600"><span>Lungs</span></label>
+                        <label class="flex items-center space-x-2"><input type="checkbox" name="organs" value="Liver" class="form-checkbox h-5 w-5 text-teal-600"><span>Liver</span></label>
+                        <label class="flex items-center space-x-2"><input type="checkbox" name="organs" value="Kidneys" class="form-checkbox h-5 w-5 text-teal-600"><span>Kidneys</span></label>
+                        <label class="flex items-center space-x-2"><input type="checkbox" name="organs" value="Pancreas" class="form-checkbox h-5 w-5 text-teal-600"><span>Pancreas</span></label>
+                        <label class="flex items-center space-x-2"><input type="checkbox" name="organs" value="Intestines" class="form-checkbox h-5 w-5 text-teal-600"><span>Intestines</span></label>
+                        <label class="flex items-center space-x-2"><input type="checkbox" name="organs" value="Corneas" class="form-checkbox h-5 w-5 text-teal-600"><span>Corneas</span></label>
+                        <label class="flex items-center space-x-2"><input type="checkbox" name="organs" value="Tissues" class="form-checkbox h-5 w-5 text-teal-600"><span>Tissues</span></label>
+                    </div>
+
+                    <h3 class="text-2xl font-semibold mb-6 mt-8 text-teal-700 border-b pb-4">Confirmation</h3>
+                    <div class="flex items-start">
+                        <input type="checkbox" id="consent" class="form-checkbox h-5 w-5 text-teal-600 mt-1" required>
+                        <label for="consent" class="ml-3 text-gray-600">I confirm that the information provided is accurate to the best of my knowledge, and I wish to be registered as an organ, eye, and tissue donor.</label>
+                    </div>
+
+                    <div class="text-center mt-8">
+                        <button type="submit" class="bg-teal-500 text-white font-bold px-10 py-3 rounded-full hover:bg-teal-600 transition duration-300 shadow-lg">Submit Registration</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="summary" class="page page-hidden py-20 bg-white pt-24">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto bg-teal-50 p-8 rounded-lg shadow-lg text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-teal-800">Thank You for Registering!</h2>
+                <p class="text-gray-700 mt-4 mb-8">Your decision to become a donor is a selfless act of kindness. Below is a summary of your registration.</p>
+                
+                <div class="text-left bg-white p-6 rounded-lg shadow-inner">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-700 border-b pb-2">Registration Summary</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div><strong class="text-gray-600">Full Name:</strong> <span id="summary-name"></span></div>
+                        <div><strong class="text-gray-600">Email:</strong> <span id="summary-email"></span></div>
+                        <div><strong class="text-gray-600">Phone:</strong> <span id="summary-phone"></span></div>
+                        <div><strong class="text-gray-600">Date of Birth:</strong> <span id="summary-dob"></span></div>
+                        <div class="sm:col-span-2"><strong class="text-gray-600">Donation Preferences:</strong> <span id="summary-organs"></span></div>
+                    </div>
+                </div>
+
+                <p class="text-sm text-gray-500 mt-8">A confirmation has been sent to your email address. Please share your decision with your family.</p>
+                <div class="text-center mt-8">
+                    <a href="#home" class="bg-teal-500 text-white font-bold px-10 py-3 rounded-full hover:bg-teal-600 transition duration-300 shadow-lg nav-link">Return to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-2xl font-bold mb-4">Gift of Life</p>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="hover:text-teal-400">Facebook</a>
+                <a href="#" class="hover:text-teal-400">Twitter</a>
+                <a href="#" class="hover:text-teal-400">Instagram</a>
+            </div>
+            <p class="text-gray-400">&copy; 2024 Gift of Life. All Rights Reserved. A symbol of hope.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const pages = document.querySelectorAll('.page');
+            const mainContent = document.getElementById('main-content');
+            const donateForm = document.getElementById('donate-form');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // --- Page Navigation Logic ---
+            const showPage = (targetId) => {
+                // Remove '#' from the id
+                const cleanId = targetId.substring(1);
+
+                // If target is a main content section, show main content wrapper
+                const isMainContent = mainContent.querySelector(targetId) !== null;
+                
+                if (isMainContent) {
+                    mainContent.classList.remove('page-hidden');
+                } else {
+                    mainContent.classList.add('page-hidden');
+                }
+
+                // Hide all pages
+                pages.forEach(page => {
+                    if (page.id !== cleanId) {
+                        page.classList.add('page-hidden');
+                    } else {
+                        page.classList.remove('page-hidden');
+                    }
+                });
+
+                // Scroll to the top of the page or the specific anchor
+                if(isMainContent && cleanId !== 'home') {
+                    document.getElementById(cleanId).scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    window.scrollTo(0, 0);
+                }
+                
+                // Close mobile menu on navigation
+                mobileMenu.classList.add('hidden');
+            };
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    showPage(targetId);
+                });
+            });
+
+            // --- Mobile Menu Toggle ---
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // --- Form Submission Logic ---
+            donateForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                // Get form values
+                const fullName = document.getElementById('fullName').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const dob = document.getElementById('dob').value;
+                
+                const selectedOrgans = Array.from(document.querySelectorAll('input[name="organs"]:checked'))
+                                            .map(cb => cb.value)
+                                            .join(', ');
+
+                // Populate summary page
+                document.getElementById('summary-name').textContent = fullName;
+                document.getElementById('summary-email').textContent = email;
+                document.getElementById('summary-phone').textContent = phone;
+                document.getElementById('summary-dob').textContent = dob;
+                document.getElementById('summary-organs').textContent = selectedOrgans || 'Not specified';
+
+                // Show the summary page
+                showPage('#summary');
+            });
+            
+            // Show the home page by default on load
+            showPage('#home');
+        });
+    </script>
+</body>
+</html>
